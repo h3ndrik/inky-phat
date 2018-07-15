@@ -371,7 +371,7 @@ class Inky212x104:
         self.reset()
 
         self._send_command(0x74, 0x54) # Set analog control block
-        self._send_command(0x75, 0x3b) # Sent by dev board but undocumented in datasheet
+        self._send_command(0x7E, 0x3b) # Set digital control block
 
         # Driver output control
         self._send_command(0x01, [0xd3, 0x00, 0x00])
